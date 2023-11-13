@@ -10,7 +10,7 @@ export const BikeDetail = () => {
     console.log(bikeSelected)
     return (
         <>
-            <h1>{bikeSelected[0].brand}</h1>
+
 
         </>
     )

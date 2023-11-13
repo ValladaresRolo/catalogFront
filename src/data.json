@@ -16,7 +16,7 @@
             ],
             "description": "Se llama Kahuna por una razón. Esta bicicleta es el rey de nuestra clásica línea de hardtail y a menudo es la bicicleta lo que hace que la gente se dé cuenta de lo impresionante que puede ser una bicicleta de montaña. Con su geometría progresiva, inspiradora de confianza, ruedas 29”, horquilla de suspensión de 100 mm y enrutamiento de cables interno para un retráctil opcional, la Kahuna está en su ambiente en el singletrack o pumptrack. La Kahuna cuenta con toques agradables, como una transmisión de 12 velocidades y potentes frenos de disco hidráulicos. ¡Es la bici la que está lista para llevarte al siguiente nivel!",
             "img": "https://www.oxfordstore.cl/media/catalog/product/cache/75c9db3c05d14ed94423d3d06c7130d6/m/y/my23_kahuna_1_1.jpg",
-            "sku": 1
+            "sku": "a1"
         },
         {
             "model": "DRAGONFLY 2023",
@@ -34,7 +34,7 @@
             ],
             "description": "La Process sigue siendo el epítome de la bicicleta perfecta para hacerlo todo. Con una excelente eficiencia de escalada, te lleva a la cima de cualquier colina. Sin embargo, donde realmente brilla, es en el descenso. Ya sea sorteando los descensos más radicales en una Process X, destrozando el circuito de enduro en tu Process 153 o volado en los senderos en tu Process 134, hay una máquina perfecta para cada piloto.<br/> El punto medio perfecto entre la Process 134 y la Process X, la Process 153 tiene todo lo necesario a un precio justo. La suspensión de 160/153mm delantera y trasera te da fiabilidad inquebrantable en descensos complicados sin dejar de ser una gran escaladora. Viene equipada con todo lo que necesitas y nada que no. Frenos potentes, suspensión confiable y ruedas con agarre la transforman en el paquete todo terreno perfecto. ",
             "img": "https://www.oxfordstore.cl/media/catalog/product/cache/75c9db3c05d14ed94423d3d06c7130d6/m/y/my22_process_153_275_1_1_1.jpg",
-            "sku": 2
+            "sku": "a2"
         },
         {
             "model": "LAVA DOME 2023",
@@ -52,7 +52,7 @@
             ],
             "description": "La Lava Dome es como tu mejor amigo, pero en forma de bicicleta. Es increíble en la tierra. Es increíble para rodar por la ciudad. Es impresionante hurgando en el singletrack de tu vecindario y lo hace todo de una manera confiable. La Lava Dome cuenta con una transmisión fácil de usar de 9 velocidades con un desviador trasero con embrague, así como un elegantes punteras y enrutamiento de cables internos. Con ruedas fuertes aro 29” que pueden aceptar hasta un neumático de 2,6”, ¡esta bicicleta está lista para todo a su paso!",
             "img": "https://www.oxfordstore.cl/media/catalog/product/cache/75c9db3c05d14ed94423d3d06c7130d6/l/a/lava_dome_opt_3_1.jpg",
-            "sku": 3
+            "sku": "a3"
         },
         {
             "model": "ZASKAR FS SPORT",
@@ -70,7 +70,7 @@
             ],
             "description": "La Zaskar FS Sport es la reina del mundo de entrada para el Trail. Con su recorrido de 130 y 120 MM, tendrás el  control en subidas explosivas y descensos relajados, donde la suspensión y la progresión van de la mano.",
             "img": "https://www.oxfordstore.cl/media/catalog/product/cache/75c9db3c05d14ed94423d3d06c7130d6/z/a/zaskar2_1.jpg",
-            "sku": 4
+            "sku": "a4"
         }
     ]
 }
