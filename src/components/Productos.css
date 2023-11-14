@@ -1,0 +1,24 @@
+.cardD {
+    margin: 0 1rem;
+}
+
+.margenes {
+    margin: 2rem 0;
+}
+
+.centrarBoton {
+    margin: 1rem 29%;
+}
+
+@media (max-width: 769px) {
+    .cardD {
+        margin: 0 auto;
+    }
+
+    .margenes h1 {
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+}
