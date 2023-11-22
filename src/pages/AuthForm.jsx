@@ -7,7 +7,9 @@ export const AuthForm = () => {
     const onSubmit = async (e) => {
         e.preventDefault()
 
-        console.log('iso click')
+        const formData = new FormData(e.target)
+        const dataObject = Object.fromEntries(formData)
+        console.log(dataObject)
     }
     return (
 
