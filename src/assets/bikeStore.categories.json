@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "6557caccb3f42d2cef09248d"
+  },
+  "name": "Downhill",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6557cadbb3f42d2cef09248f"
+  },
+  "name": "Enduro",
+  "__v": 0
+}]
