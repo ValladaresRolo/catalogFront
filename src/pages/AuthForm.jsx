@@ -1,7 +1,11 @@
 import { useContext, useState } from 'react';
-import Spinner from "react-bootstrap/Spinner";
 import { loginService, signupService } from '../service/user';
 import { UserContext } from '../context/UserContext';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import { pinwheel } from 'ldrs'
+pinwheel.register()
+
 
 export const AuthForm = () => {
     const [isLoading, setIsLoading] = useState(false)
@@ -34,6 +38,8 @@ export const AuthForm = () => {
     return (
         <section>
             <p>{token}</p>
+
+
             <form onSubmit={onSubmit} >
                 <h3>{isMember ? "Login" : "Register"}</h3>
 
@@ -68,12 +74,7 @@ export const AuthForm = () => {
                     <button type='button' onClick={() => setIsMember(!isMember)}>{isMember ? "Register" : "Login"}</button>
                 </p>
             </form>
-            {isLoading && <Spinner animation="grow" variant="warning" />}
+            {isLoading && <l-pinwheel size="60" stroke="3.5" speed="0.9" color="black"></l-pinwheel>}
         </section>
     )
 }
-
-
-
-
-
