@@ -1,11 +1,27 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import data from '../data.json'
 import { Image } from 'react-bootstrap'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 
 export const BikeDetail = () => {
+
+
+    const [catalogs, setCatalogs] = useState([])
+    const getCatalogs = async () => {
+        const resp = await axios.get('https://api-server-ascm.onrender.com/v1/catalog')
+        setCatalogs(resp.data.detail)
+    }
+
+    useEffect(() => {
+        getCatalogs()
+    }, [])
+
+
+
+
     const { sku } = useParams()
-    const bikeSelected = data.bikes.filter(bike => bike.sku === sku)
+    const bikeSelected = catalogs.filter(catalog => catalog.sku === sku)
 
 
     console.log(bikeSelected)

@@ -1,13 +1,20 @@
+import { useState, useEffect } from 'react';
 import axios from 'axios'
-import React, { useState, useEffect } from 'react';
+
+export function conexionCatalog(url) {
+
+    const [catalogs, setCatalogs] = useState([])
+
+    const getCatalogs = async () => {
+        const resp = await axios.get('https://api-server-ascm.onrender.com/v1/catalog')
+        console.log(resp.data)
+        setCatalogs(resp.data.detail)
+    }
 
 
-const [catalogs, setCatalogs] = useState([])
+    useEffect(() => {
+        getCatalogs()
+    }, [])
 
-const getCatalogs = async () => {
-    const resp = await axios.get('http://localhost:3000/v1/catalog')
-    /* console.log(resp.data)
-    ver consola
-    */
-    setCatalogs(resp.data.detail)
+
 }
