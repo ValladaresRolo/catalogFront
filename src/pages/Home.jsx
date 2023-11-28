@@ -1,6 +1,6 @@
 import React from 'react'
 import { TopImage } from '../components/TopImage'
-import { Productos } from '../components/productos'
+import { Productos } from '../components/Productos'
 
 
 

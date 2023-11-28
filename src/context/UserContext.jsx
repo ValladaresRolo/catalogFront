@@ -8,7 +8,8 @@ export const UserProvider = ({ children }) => {
     return (
         <UserContext.Provider value={{
             token,
-            setToken
+            setToken,
+
 
             //  para recolectar todas las varias bles que esten globales ejemplo userName, setUserName segir 
         }}>

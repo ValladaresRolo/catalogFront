@@ -13,3 +13,9 @@ export const signupService = async (data) => {
     console.log(response.data)
     return response.data
 }
+
+export const getDataService = async (data) => {
+    const response = await axios.get(`${URL_ROOT}/perfil`, data)
+    console.log(response.data)
+    return response.data
+}
