@@ -1,10 +1,12 @@
-import { useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { loginService, signupService } from '../service/user';
-import { UserContext } from '../context/UserContext';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import { useContext, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { loginService, signupService } from '../service/user'
+import { UserContext } from '../context/UserContext'
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 import { pinwheel } from 'ldrs'
+
+
 pinwheel.register()
 
 

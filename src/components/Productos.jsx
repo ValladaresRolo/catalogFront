@@ -6,11 +6,12 @@ import { Row } from 'react-bootstrap'
 import './Productos.css'
 import { conexionCatalog } from '../service/conexion'
 
-
 export const Productos = () => {
 
 
+
     const catalogs = conexionCatalog()
+
 
 
 
@@ -33,6 +34,8 @@ export const Productos = () => {
                 ))
                 }
             </Row>
+
         </>
     )
+
 }

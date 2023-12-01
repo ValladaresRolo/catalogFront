@@ -12,6 +12,7 @@ import { Perfil } from "./authorization/perfil"
 
 
 
+
 function App() {
 
   return (
@@ -27,6 +28,8 @@ function App() {
             <Route path="/Catalogo" element={<Catalogo />} />
             <Route path="/bikes/:sku" element={<BikeDetail />} />
             <Route path="/login" element={<AuthForm />} />
+
+
             <Route path="/perfil" element={<Perfil />} />
 
 
