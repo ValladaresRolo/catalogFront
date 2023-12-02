@@ -9,7 +9,7 @@ import { Container } from "react-bootstrap"
 import { AuthForm } from "./pages/AuthForm"
 import { UserProvider } from "./context/UserContext"
 import { Perfil } from "./authorization/perfil"
-
+import { Failure } from './pages/failure';
 
 
 
@@ -29,9 +29,7 @@ function App() {
             <Route path="/catalogFront/bikes/:sku" element={<BikeDetail />} />
             <Route path="/catalogFront/login" element={<AuthForm />} />
             <Route path="/catalogFront/perfil" element={<Perfil />} />
-
-
-
+            <Route path="/catalogFront/failure" element={<Failure />} />
 
           </Routes>
         </UserProvider>

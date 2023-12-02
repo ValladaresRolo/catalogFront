@@ -11,7 +11,7 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Navbar.Brand as={Link} to={'/'}>
+                <Navbar.Brand as={Link} to={'/catalogFront/'}>
                     <Image style={{ width: "200px", height: "100px" }} src="https://res.cloudinary.com/dhghhzrkl/image/upload/v1701451226/ReactBike/Recurso1_vqwb9n.svg" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
