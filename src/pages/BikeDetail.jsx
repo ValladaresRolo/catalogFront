@@ -17,8 +17,8 @@ export const BikeDetail = () => {
 
 
     const functionComprar = async (bikeSelected) => {
-        const response = await axios.post("http://localhost:3000/mercadoPago", bikeSelected
-        )
+        const response = await axios.post("https://api-server-ascm.onrender.com/mercadopago", bikeSelected)
+        /* const response = await axios.post("http://localhost:3000/mercadoPago", bikeSelected)*/
         window.location.href = response.data
     }
 
