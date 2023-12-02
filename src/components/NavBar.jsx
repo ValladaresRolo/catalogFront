@@ -17,14 +17,14 @@ export const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to={'/'}>Inicio</Nav.Link>
-                        <Nav.Link as={Link} to={'/catalogo'} >Catalogo</Nav.Link>
+                        <Nav.Link as={Link} to={'/catalogFront/'}>Inicio</Nav.Link>
+                        <Nav.Link as={Link} to={'/catalogFront/catalogo'} >Catalogo</Nav.Link>
 
 
                     </Nav>
                     <Nav>
-                        <Nav.Link as={Link} to={'/perfil'}>Editar Perfil</Nav.Link>
-                        <Nav.Link as={Link} to={'/login'}>Ingresar</Nav.Link>
+                        <Nav.Link as={Link} to={'/catalogFront/perfil'}>Editar Perfil</Nav.Link>
+                        <Nav.Link as={Link} to={'/catalogFront/login'}>Ingresar</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -31,7 +31,7 @@ export const Productos = () => {
                                 <Card.Text>
                                     $ {catalog.price.toLocaleString()} {/* Aplica el formato de separador de miles */}
                                 </Card.Text>
-                                <Link to={`/bikes/${catalog.sku}`}>
+                                <Link to={`/catalogFront/bikes/${catalog.sku}`}>
                                     <Button className='buttonD'>Ver Detalles</Button>
                                 </Link>
 

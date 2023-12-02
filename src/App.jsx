@@ -24,13 +24,11 @@ function App() {
         <UserProvider>
 
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Catalogo" element={<Catalogo />} />
-            <Route path="/bikes/:sku" element={<BikeDetail />} />
-            <Route path="/login" element={<AuthForm />} />
-
-
-            <Route path="/perfil" element={<Perfil />} />
+            <Route path="/catalogFront/" element={<Home />} />
+            <Route path="/catalogFront/Catalogo" element={<Catalogo />} />
+            <Route path="/catalogFront/bikes/:sku" element={<BikeDetail />} />
+            <Route path="/catalogFront/login" element={<AuthForm />} />
+            <Route path="/catalogFront/perfil" element={<Perfil />} />
 
 
 
