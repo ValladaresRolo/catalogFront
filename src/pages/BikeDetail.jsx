@@ -44,7 +44,7 @@ export const BikeDetail = () => {
                                 <p>
                                     {bikeSelected[0].description}
                                 </p>
-                                <Button className='buttonShop' onClick={() => functionComprar(bikeSelected[0])}>Comprar </Button>
+                                <Button className='buttonShop' onClick={() => functionComprar(bikeSelected[0])}>Comprar</Button>
                             </Col>
                         </Row>
                     </Container>
