@@ -1,0 +1,23 @@
+.bikeDetail {
+    margin: 3rem 0;
+}
+
+.rowDetail {
+    margin: 5rem 0
+}
+
+.buttonShop {
+    background-color: orange !important;
+    border-color: red !important;
+    color: black !important;
+    font-weight: bold !important;
+    width: 100% !important;
+
+}
+
+.buttonShop:hover {
+    background-color: red !important;
+    border-color: orange !important;
+    color: white !important;
+
+}

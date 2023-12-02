@@ -19,6 +19,22 @@
     list-style-type: none;
 }
 
+.sinV a {
+    text-decoration: none !important;
+    color: #f5ab0a !important;
+}
+
+
+.sinV a:hover {
+    color: #f5740a !important;
+}
+
+.imgRss {
+    width: 50%;
+    min-height: 100px;
+    margin: 1rem auto
+}
+
 .rrss {
     list-style-type: none;
     display: flex;

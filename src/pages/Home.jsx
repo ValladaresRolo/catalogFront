@@ -1,6 +1,6 @@
 import React from 'react'
-import { TopImage } from '../components/TopImage'
 import { Productos } from '../components/Productos'
+import { Hero } from '../components/Hero'
 
 
 
@@ -8,8 +8,8 @@ export const Home = () => {
     return (
         <>
 
-            <h2>JDJDJD</h2>
-            <TopImage />
+
+            <Hero />
 
             <Productos />
 

@@ -1,0 +1,33 @@
+.textTitle {
+    color: #f5ab0a !important;
+    font-weight: bold !important;
+}
+
+.squareHero {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.heroImage {
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://p.vitalmtb.com/photos/press_releases/4003/title_image/s1600_konatitile_469714.jpg');
+}
+
+
+@media (max-width: 768px) {
+    .textTitle {
+        font-size: 3rem !important;
+    }
+
+    .squareHero {
+        width: 100%;
+    }
+}

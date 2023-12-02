@@ -1,5 +1,13 @@
 .cardD {
-    margin: 0 1rem;
+
+    padding-top: 1rem;
+    border-color: #f5ab0a59 !important;
+}
+
+.buttonD {
+    background-color: #f5ab0a !important;
+    width: 100% !important;
+    border-color: #f5ab0a59 !important;
 }
 
 .margenes {
@@ -8,6 +16,12 @@
 
 .centrarBoton {
     margin: 1rem 29%;
+}
+
+.catalog {
+    background-color: rgb(233, 233, 233);
+    padding-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 @media (max-width: 769px) {
