@@ -1,8 +1,43 @@
-# React + Vite
+```markdown
+# Tienda de Bicicletas 🚲
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una tienda de venta de bicicletas desarrollada con React + Vite, MongoDB, React-Bootstrap y CSS.
 
-Currently, two official plugins are available:
+## Repositorio del Servidor 🖥️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El repositorio del servidor de este proyecto se encuentra en https://github.com/ValladaresRolo/server-api.
+
+## Dependencias 📦
+
+Para este proyecto necesitarás instalar las siguientes dependencias:
+
+- axios
+- react-bootstrap
+- ldrs (spinner de carga)
+- react
+- react-dom
+- react-router-dom
+
+Puedes instalar todas estas dependencias con el siguiente comando:
+
+```bash
+npm install axios react-bootstrap ldrs react react-dom react-router-dom
+```
+
+## Ejecución 🚀
+
+Para ejecutar este proyecto, usa el siguiente comando:
+
+```bash
+npm run dev
+```
+
+Esto iniciará el servidor de desarrollo. ¡Ahora puedes abrir tu navegador y visitar la aplicación!
+
+## Contribuir 🤝
+
+Las contribuciones son siempre bienvenidas. Por favor, consulta las `CONTRIBUTING.md` para ver cómo puedes ayudar.
+
+## Licencia 📄
+
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE.md` para más detalles.
