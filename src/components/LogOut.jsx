@@ -2,7 +2,6 @@ import { useUser } from '../context/UserContext'
 import { useNavigate } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import Nav from 'react-bootstrap/Nav'
-import Link from 'react-bootstrap/NavLink'
 import { Link } from 'react-router-dom'
 
 export const LogoutLink = () => {
