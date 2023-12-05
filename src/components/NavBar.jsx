@@ -3,9 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
-
-
-
+import { LogoutLink } from './LogOut'
 
 export const NavBar = () => {
     return (
@@ -25,6 +23,8 @@ export const NavBar = () => {
                     <Nav>
                         <Nav.Link as={Link} to={'/catalogFront/perfil'}>Editar Perfil</Nav.Link>
                         <Nav.Link as={Link} to={'/catalogFront/login'}>Ingresar</Nav.Link>
+                        <LogoutLink />
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>

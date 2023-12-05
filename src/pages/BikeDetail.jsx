@@ -4,15 +4,17 @@ import { Row, Container, Image, Col, Button } from 'react-bootstrap'
 import { conexionCatalog } from "../service/conexion"
 import axios from 'axios'
 import './BikeDetail.css'
+import { useUser } from '../context/UserContext'
 
 export const BikeDetail = () => {
+
+    const { user } = useUser()
 
     const catalogs = conexionCatalog()
 
     const { sku } = useParams()
     const bikeSelected = catalogs.filter(catalog => catalog.sku === sku)
 
-    console.log(bikeSelected[0])
 
 
 
@@ -28,23 +30,25 @@ export const BikeDetail = () => {
                 <>
                     <Container className='bikeDetail '>
                         <Row className="rowDetail ">
-                            <Col><Image src={bikeSelected[0].img} fluid /></Col>
+                            <Col ><Image src={bikeSelected[0].img} fluid /></Col>
 
 
                         </Row>
                         <Row>
-                            <Col> <h1>{bikeSelected[0].model}</h1>
+                            <Col sm={6}> <h1>{bikeSelected[0].model}</h1>
                                 <h2>{bikeSelected[0].brand}</h2>
                                 <h3>${bikeSelected[0].price.toLocaleString()}</h3>
                                 <h4>{bikeSelected[0].year}</h4>
 
 
                             </Col>
-                            <Col>
+                            <Col sm={6}>
                                 <p>
                                     {bikeSelected[0].description}
                                 </p>
-                                <Button className='buttonShop' onClick={() => functionComprar(bikeSelected[0])}>Comprar</Button>
+                                {user && <Button className='buttonShop' onClick={() => functionComprar(bikeSelected[0])}>Comprar</Button>}
+
+
                             </Col>
                         </Row>
                     </Container>

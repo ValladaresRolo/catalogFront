@@ -8,6 +8,7 @@ import { pinwheel } from 'ldrs'
 import { Container, Row, Col } from 'react-bootstrap'
 
 
+
 pinwheel.register()
 
 export const AuthForm = () => {
@@ -36,7 +37,7 @@ export const AuthForm = () => {
                 console.log(userData);
                 setToken(userData.detail.token)
                 setUser(userData.detail.user)
-                navigate(isMember ? '/perfil' : '/')
+                navigate('/catalogFront/perfil');
             } catch (error) {
                 console.error(error)
                 setError('Usuario o password incorrecto')
@@ -48,13 +49,14 @@ export const AuthForm = () => {
             console.log(userData)
             setToken(userData.detail.token)
             setUser(userData.detail.user)
+            navigate('/catalogFront/perfil');
         }
         setIsLoading(false);
     }
 
     return (
         <section>
-            <p>{token}</p>
+
 
             <form onSubmit={onSubmit} >
 

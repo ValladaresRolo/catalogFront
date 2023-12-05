@@ -17,11 +17,11 @@ function App() {
 
   return (
     <>
+      <UserProvider>
+        <NavBar />
 
-      <NavBar />
+        <Container>
 
-      <Container>
-        <UserProvider>
 
           <Routes>
             <Route path="/catalogFront/" element={<Home />} />
@@ -32,14 +32,15 @@ function App() {
             <Route path="/catalogFront/failure" element={<Failure />} />
 
           </Routes>
-        </UserProvider>
-        <ul>
 
-        </ul>
+          <ul>
+
+          </ul>
 
 
-      </Container>
-      <Footer />
+        </Container>
+        <Footer />
+      </UserProvider >
 
 
 

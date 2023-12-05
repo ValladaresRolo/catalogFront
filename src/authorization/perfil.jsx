@@ -1,4 +1,6 @@
+import { Button } from 'react-bootstrap'
 import { useUser } from '../context/UserContext'
+import { LogoutButton } from '../components/LogOut'
 
 export const UserProfile = () => {
     const { user } = useUser()
@@ -16,6 +18,9 @@ export const UserProfile = () => {
             <p>Nombre: {user.firstName}</p>
             <p>Apellido: {user.lastName}</p>
             <p>Email: {user.mail}</p>
+
+
+            <LogoutButton />
         </div>
     )
 }
