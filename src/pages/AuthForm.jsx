@@ -1,7 +1,7 @@
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { loginService, signupService } from '../service/user'
-import { UserContext } from '../context/UserContext'
+import { useUser } from '../context/UserContext'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import { pinwheel } from 'ldrs'
@@ -10,13 +10,16 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 pinwheel.register()
 
-
 export const AuthForm = () => {
     const [isLoading, setIsLoading] = useState(false)
+
     const navigate = useNavigate()
+
     const [isMember, setIsMember] = useState(false)
-    const { token, setToken } = useContext(UserContext)
+    const { token, setToken, setUser } = useUser()
     const [error, setError] = useState(null)
+
+
 
     const onSubmit = async (e) => {
         e.preventDefault()
@@ -31,8 +34,9 @@ export const AuthForm = () => {
             try {
                 const userData = await loginService(dataObject);
                 console.log(userData);
-                setToken(userData.detail.token);
-                /*navigate(isMember ? '/perfil' : '/')*/
+                setToken(userData.detail.token)
+                setUser(userData.detail.user)
+                navigate(isMember ? '/perfil' : '/')
             } catch (error) {
                 console.error(error)
                 setError('Usuario o password incorrecto')
@@ -43,6 +47,7 @@ export const AuthForm = () => {
             const userData = await signupService(dataObject)
             console.log(userData)
             setToken(userData.detail.token)
+            setUser(userData.detail.user)
         }
         setIsLoading(false);
     }
@@ -51,17 +56,13 @@ export const AuthForm = () => {
         <section>
             <p>{token}</p>
 
-
             <form onSubmit={onSubmit} >
-
 
                 <Container>
                     <Row>
                         <Col sm={6}>  <h3>
                             {isMember ? "Como que no eres miembro aun?" : "Ingresa a tu cuenta"}</h3>
                             <p>  <Button type='button' variant="secondary" onClick={() => setIsMember(!isMember)}>{isMember ? "Registrate" : "Accede"}</Button>
-
-
 
                             </p></Col>
                         <Col sm={6}>
@@ -79,7 +80,6 @@ export const AuthForm = () => {
                                         <Form.Control id="lastName" type="text" name='lastName' placeholder="Apellido" />
                                     </Form.Group>
                                 </>
-
                             )
                             }
                             <Form.Group className="mb-3" >
@@ -91,7 +91,6 @@ export const AuthForm = () => {
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control id="password" type="password" name='password' placeholder="password" />
                             </Form.Group>
-
 
                             <Button variant="primary" type="submit">
                                 Enviar
@@ -107,11 +106,7 @@ export const AuthForm = () => {
             <p>{error}</p>
             {isLoading && <l-pinwheel size="60" stroke="3.5" speed="0.9" color="black"></l-pinwheel>}
 
-
-
-
         </section>
-
 
     )
 }
