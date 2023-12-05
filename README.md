@@ -33,11 +33,3 @@ npm run dev
 ```
 
 Esto iniciará el servidor de desarrollo. ¡Ahora puedes abrir tu navegador y visitar la aplicación!
-
-## Contribuir 🤝
-
-Las contribuciones son siempre bienvenidas. Por favor, consulta las `CONTRIBUTING.md` para ver cómo puedes ayudar.
-
-## Licencia 📄
-
-Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE.md` para más detalles.
