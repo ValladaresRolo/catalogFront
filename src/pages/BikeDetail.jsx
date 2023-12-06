@@ -17,6 +17,8 @@ export const BikeDetail = () => {
     const { sku } = useParams()
     const bikeSelected = catalogs.filter(catalog => catalog.sku === sku)
 
+
+
     const [lastRoute, setLastRoute] = useState('')
     const location = useLocation()
     console.log(location.pathname)

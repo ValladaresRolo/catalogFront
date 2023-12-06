@@ -37,6 +37,7 @@ export const AuthForm = () => {
                 console.log(userData);
                 setToken(userData.detail.token)
                 setUser(userData.detail.user)
+                console.log(lastRoute);
 
                 lastRoute === null ? navigate('/catalogFront/perfil') : navigate(lastRoute)
 

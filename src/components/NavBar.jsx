@@ -4,8 +4,10 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
 import { LogoutLink } from './LogOut'
+import { useUser } from '../context/UserContext'
 
 export const NavBar = () => {
+    const { user } = useUser()
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
@@ -20,12 +22,19 @@ export const NavBar = () => {
 
 
                     </Nav>
+
+
                     <Nav>
-                        <Nav.Link as={Link} to={'/catalogFront/perfil'}>Editar Perfil</Nav.Link>
                         <Nav.Link as={Link} to={'/catalogFront/login'}>Ingresar</Nav.Link>
-                        <LogoutLink />
+
+                        {user && <>
+                            <Nav.Link as={Link} to={'/catalogFront/perfil'}>Editar Perfil</Nav.Link>
+                            <LogoutLink />
+                        </>
+                        }
 
                     </Nav>
+
                 </Navbar.Collapse>
             </Container>
         </Navbar>
