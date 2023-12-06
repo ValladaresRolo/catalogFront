@@ -1,10 +1,12 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { Row, Container, Image, Col, Button } from 'react-bootstrap'
 import { conexionCatalog } from "../service/conexion"
 import axios from 'axios'
 import './BikeDetail.css'
 import { useUser } from '../context/UserContext'
+import { useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 export const BikeDetail = () => {
 
@@ -14,6 +16,14 @@ export const BikeDetail = () => {
 
     const { sku } = useParams()
     const bikeSelected = catalogs.filter(catalog => catalog.sku === sku)
+
+    const [lastRoute, setLastRoute] = useState('')
+    const location = useLocation()
+    console.log(location.pathname)
+
+    useEffect(() => {
+        setLastRoute(location.pathname)
+    }, [location])
 
 
 
@@ -48,6 +58,13 @@ export const BikeDetail = () => {
                                 </p>
                                 {user && <Button className='buttonShop' onClick={() => functionComprar(bikeSelected[0])}>Comprar</Button>}
 
+                                {!user && (
+                                    <Link to='/catalogFront/login'>
+                                        <Button disabled className='buttonShop'>
+                                            Necesitas iniciar sesión para realizar una compra
+                                        </Button>
+                                    </Link>
+                                )}
 
                             </Col>
                         </Row>

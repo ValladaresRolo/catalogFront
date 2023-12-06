@@ -17,6 +17,7 @@ export const LogoutLink = () => {
         navigate('/catalogFront/')
     }
     return (
+
         <Nav.Link onClick={handleLogout} as={Link} to={'/catalogFront'}>
             Cerrar sesión
         </Nav.Link>

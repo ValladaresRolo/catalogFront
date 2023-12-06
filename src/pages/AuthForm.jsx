@@ -19,7 +19,7 @@ export const AuthForm = () => {
     const [isMember, setIsMember] = useState(false)
     const { token, setToken, setUser } = useUser()
     const [error, setError] = useState(null)
-
+    const { lastRoute } = useState()
 
 
     const onSubmit = async (e) => {
@@ -37,7 +37,12 @@ export const AuthForm = () => {
                 console.log(userData);
                 setToken(userData.detail.token)
                 setUser(userData.detail.user)
-                navigate('/catalogFront/perfil');
+
+                lastRoute === null ? navigate('/catalogFront/perfil') : navigate(lastRoute)
+
+
+
+
             } catch (error) {
                 console.error(error)
                 setError('Usuario o password incorrecto')
